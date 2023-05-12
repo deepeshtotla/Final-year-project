@@ -4,46 +4,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hackathons</title>
+  <title>Open Source</title>
   <!-- Include Tailwind CSS framework from CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <style>
+    /* Style for the image hover effect */
+    .hackathon-image:hover {
+      transform: scale(1.05); /* Increase image size by 5% */
+      transition: all 0.3s ease-out; /* Smooth transition */
+    }
+
+    /* Style for the floating text effect */
+    .floating-text {
+      animation: float 5s ease-in-out infinite;
+    }
+
+    /* Keyframe animation for the floating text effect */
+    @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+
+    /* Style for the floating section effect */
+    .floating-section {
+      animation: float 5s ease-in-out infinite;
+    }
+
+    /* Keyframe animation for the floating section effect */
+    @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- Create a header with a blue background -->
   <div class="bg-blue-500 text-white py-4 px-6">
-    <h1 class="text-3xl font-bold">Hackathons</h1>
+    <h1 class="text-3xl font-bold">Open Source</h1>
   </div>
 
   <!-- Create a section for each hackathon -->
-  <section class="py-8 px-6">
-    <h2 class="text-2xl font-bold mb-4">XROS FELLOWSHIP</h2>
-    <div>
-        <img src="" alt="XROS FELLOWSHIP IMG">
+  <section class="py-8 px-6 flex flex-row-reverse floating-section">
+    <div class="w-1/2">
+      <img class="hackathon-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiVADb6vRKRqOWrs7Sb8dudQNlf7X0NY9VdW05Cd2m6Q&s" alt="XROS FELLOWSHIP IMG">
     </div>
-    <div>
-        <p class="mb-4">The XROS Fellowship is a three-month program designed to help young entrepreneurs turn their ideas into reality.</p>
-        <p class="mb-4">For more information, visit <a href="https://xrosfellowship.com/">xrosfellowship.com</a>.</p>
+    <div class="w-1/2 pl-6">
+      <h2 class="text-2xl font-bold mb-4 floating-text">XROS FELLOWSHIP</h2>
+      <p class="mb-4 floating-text">The XROS Fellowship is a three-month program designed to help young entrepreneurs turn their ideas into reality.</p>
+      <p class="mb-4 floating-text">For more information, visit <a href="https://xrosfellowship.com/">xrosfellowship.com</a>.</p>
     </div>
-
   </section>
 
-  <section class="py-8 px-6">
-    <h2 class="text-2xl font-bold mb-4">GSHOCK</h2>
-    <p class="mb-4">GSHOCK is a hackathon focused on building innovative solutions for the gaming industry.</p>
-    <p class="mb-4">For more information, visit <a href="https://www.gshockhackathon.com/">gshockhackathon.com</a>.</p>
+  <section class="py-8 px-6 flex floating-section">
+    <div class="w-1/2">
+      <img class="hackathon-image" src="https://gsoc.harshcasper.com/static/8fce3a38e44981f3b5c3ecd1f7ca9613/5a190/gsoc.png" alt="GSHOCK IMG">
+    </div>
+    <div class="w-1/2 pr-6">
+      <h2 class="text-2xl font-bold mb-4 floating-text">GSHOCK</h2>
+      <p class="mb-4 floating-text">GSHOCK is a hackathon focused on building innovative solutions for the gaming industry.</p>
+      <p class="mb-4 floating-text">For more information, visit <a href="https://www.gshockhackathon.com/">gshockhackathon.com</a>.</p>
+    </div>
   </section>
 
-  <section class="py-8 px-6">
-    <h2 class="text-2xl font-bold mb-4">MLH</h2>
-    <p class="mb-4">MLH is the official student hackathon league, with events held all over the world.</p>
-    <p class="mb-4">For more information, visit <a href="https://mlh.io/">mlh.io</a>.</p>
+  <section class="py-8 px-6 flex flex-row-reverse floating-section">
+    <div class="w-1/2">
+      <img class="hackathon-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--NfDroscJ--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ld4nusbva0vg4dardt6x.png" alt="MLH IMG">
+    </div>
+    <div class="w-1/2 pl-6">
+      <h2 class="text-2xl font-bold mb-4 floating-text">MLH</h2>
+      <p class="mb-4 floating-text">MLH is the official student hackathon league, with events held all over the world.</p>
+      <p class="mb-4 floating-text">For more information, visit <a href="https://mlh.io/">mlh.io</a>.</p>
+    </div>
   </section>
 
-  <section class="py-8 px-6">
-    <h2 class="text-2xl font-bold mb-4">HECTOBER FEST</h2>
+  <section class="py-8 px-6 flex floating-section">
+    <div class="w-1/2">
+      <img class="hackathon-image" src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630" alt="HECTOBER IMG">
+    </div>
+    <div class="w-1/2 pr-6">
+      <h2 class="text-2xl font-bold mb-4 floating-text">HECTOBER FEST</h2>
     <p class="mb-4">Hectoberfest is a month-long celebration of open source software, with various events and activities organized by GitHub.</p>
     <p class="mb-4">For more information, visit <a href="https://github.com/blog/2466-celebrate-open-source-this-october-with-hacktoberfest">github.com/blog/2466-celebrate-open-source-this-october-with-hacktoberfest</a>.</p>
+    </div>
   </section>
 </body>
 
